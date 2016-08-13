@@ -97,7 +97,7 @@ def scan(hostname, ports):
 def main():
   parser = argparse.ArgumentParser(description="Port scanner")
   parser.add_argument("hostname",type=hostname,help="Hostname or  ip address.")
-  parser.add_argument("ports",type=ports, help="Single port")
+  parser.add_argument("ports",type=ports, help="Single port or list of ports (separated by comma) or range(separated by :")
   args = parser.parse_args()
   count=scan(args.hostname,args.ports)
   print bcolors.OKGREEN + "Found %d open ports" % (count) + bcolors.ENDC
