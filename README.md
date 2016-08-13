@@ -11,7 +11,7 @@ Port scanner
 positional arguments:
   hostname    Hostname or ip address.
   ports       Single port or list of ports (separated by comma) or
-              range(separated by :
+              range(separated by :)
 
 optional arguments:
   -h, --help  show this help message and exit
